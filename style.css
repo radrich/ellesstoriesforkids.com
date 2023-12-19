@@ -227,6 +227,10 @@ ul.icons li a:active{
     color: #1b1f3b;
 }
 
+footer ul.icons{
+    margin-top: 16px;
+}
+
 footer ul.icons li{
     margin: 0;
 }
