@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?Inter:wght@200;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?Inter:wght@500;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,900;1,500&display=swap');
 
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
-    font-weight: 100;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 footer{
@@ -21,8 +23,8 @@ footer{
     position: relative;
 }
 
-.bar{
-    background: linear-gradient(to right, #0ABAB5, #ce5a47);
+.banner{
+    background: #ffcc00;
     position: relative;
     top: 0;
     left: 0;
@@ -34,13 +36,12 @@ h1, h2 {
     font-size: 32px;
     line-height: 1.2em;
     margin: 40px 0 20px;
-    font-weight: 800;
+    font-weight: 900;
 }
 
-p {
+p{
     font-size: 20px;
     line-height: 30px;
-    font-family: 'Inter', sans-serif;
     margin: 20px 0;
 }
 p.caption{
@@ -50,20 +51,87 @@ p.caption{
     font-size: 16px;
     text-align: center;
 }
+p.footnote{
+    opacity: .5;
+    font-style: oblique;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+ul, ol, li{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+form{
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+label{
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 900;
+}
+input[type="email"],
+input[type="text"]{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 20px;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+}
+
+input[type="submit"],
+a.cta{
+    background-color: #3259ff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    padding: 12px 20px;
+    cursor: pointer;
+    position: relative;
+}
+input[type="submit"]:hover,
+a.cta:hover{
+    background-color: #3259ff;
+}
+input[type="submit"]:active,
+a.cta:active{
+    top: 1px;
+}
 
 img{
     display: block;
     max-width: 100%;
 }
 img.logo{
-    width: 104px;
+    width: 120px;
     position: absolute;
-    left: -104px;
+    left: -120px;
     top: -64px;
+    border-radius: 50%;
+}
+img.fill{
+    width: 100%;
+}
+img:not(.logo){
+    border-radius: 12px;
+}
+
+iframe.rounded-corners{
+    border-radius: 12px;
+}
+
+.hilight{
+    background-color: #ffcc00;
 }
 
 a{
-    color: #0ABAB5;
+    color: #3259ff;
 }
 a:hover, a:active{
     color: #CE5A47;
@@ -75,18 +143,20 @@ a:hover, a:active{
     }
 
     img.logo{
-        width: 40px;
+        width: 120px;
         position: relative;
         left: 0;
-        top: 24px;
+        top: 0;
+        margin-top: -24px;
     }
 }
 @media (max-width: 680px) {
-    .container img{
-        max-width: calc(100% + 40px);
+    /* .container img:not(.logo){
+        width: calc(100% + 40px);
+        max-width: none;
         margin-left: -20px;
-    }
+    } */
     .container img.logo{
-        margin-left: 0;
+        /* margin-left: 0; */
     }
 }
