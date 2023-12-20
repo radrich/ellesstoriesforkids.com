@@ -244,6 +244,7 @@ footer ul.icons li a:hover{
 
 ul.icons svg{
     fill: currentcolor;
+    width: 100%;
 }
 
 ul.icons svg.apple{
