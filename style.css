@@ -214,14 +214,14 @@ ul.icons{
 ul.icons li{
     list-style: none;
     padding: 0;
-    margin: 0 12px 0 0;
+    margin: 0 8px 0 0;
     display: block;
 }
 
 ul.icons li a{
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     background-color: white;
     color: #3259ff;
     border-radius: 50%;
