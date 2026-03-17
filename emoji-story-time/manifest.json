@@ -2,7 +2,7 @@
   "name": "Emoji Story Time – Elle's Stories for Kids",
   "short_name": "Emoji Story",
   "description": "Deal four emojis and make up a story that connects them all!",
-  "start_url": "./emoji-story-time.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffd5f4",
   "theme_color": "#ffd5f4",

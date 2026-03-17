@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emoji Story Time – Elle's Stories for Kids</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#ffd5f4" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Emoji Story Time" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -218,7 +224,7 @@
 
   <button id="btn" onclick="generate()">✦ Deal My Emojis ✦</button>
 
-  <p id="subtitle">Deal four emojis.<br>Make up a story that connects them all.</p>
+  <p id="subtitle">Deal four emojis. Make up a story that connects them all.</p>
 
   <p id="counter"></p>
 
@@ -314,5 +320,13 @@
     }
   </script>
 
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js');
+      });
+    }
+  </script>
 </body>
 </html>
