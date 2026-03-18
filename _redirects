@@ -1,2 +1,3 @@
 # redirects
-/emoji-story-time.html /emoji-story-time/index.html
+/emoji-story-time.html /emoji-story-time/index.html 301
+/emoji-story-time /emoji-story-time/index.html 301
